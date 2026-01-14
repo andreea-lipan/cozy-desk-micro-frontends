@@ -3,13 +3,12 @@
 
 ## 📚 Table of Contents
 - [What are Micro Frontends?](#what-are-micro-frontends)
-- [Why Use Micro Frontends?](#why-use-micro-frontends)
+- [Why Use Micro Frontends?](#why-are-micro-frontends-useful)
 - [Prerequisites](#prerequisites)
 - [Tutorial Overview](#tutorial-overview)
 - [Part 1: Creating Your First Micro Frontend](#part-1-creating-your-first-micro-frontend)
 - [Part 2: Creating the Base Application](#part-2-creating-the-base-application)
 - [Part 3: Connecting Everything Together](#part-3-connecting-everything-together)
-- [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -88,6 +87,10 @@ We'll build this in three main parts:
 
 By the end, you'll have a working digital desktop with two independently deployable micro frontends!
 
+
+## Part 1: Creating Your First Micro Frontend
+
+In this section, we'll create the Tea Tracker micro frontend - a standalone Angular application that tracks your tea consumption.
 
 ### Step 1: Create a New Angular Application
 
