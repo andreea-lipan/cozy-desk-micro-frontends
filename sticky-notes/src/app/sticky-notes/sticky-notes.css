@@ -1,0 +1,130 @@
+.sticky-card {
+  width: 260px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #fef9c3; /* pastel yellow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.header h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #854d0e;
+}
+
+.icon {
+  font-size: 1.3rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.85rem;
+  background: #fffbeb;
+  outline: none;
+}
+
+.input-row input::placeholder {
+  color: #ca8a04;
+}
+
+.input-row button {
+  border: none;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: #fde68a;
+  color: #78350f;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.input-row button:hover {
+  background: #fcd34d;
+}
+
+.input-row button:active {
+  transform: scale(0.95);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  padding: 4px 6px;
+  border-radius: 8px;
+}
+
+.list li:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.list label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.list input[type='checkbox'] {
+  accent-color: #eab308;
+}
+
+.text {
+  color: #78350f;
+}
+
+.done .text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #a16207;
+}
+
+.delete:hover {
+  color: #78350f;
+}
+
+.empty {
+  font-size: 0.8rem;
+  color: #a16207;
+  font-style: italic;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #a16207;
+}

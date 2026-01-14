@@ -1,0 +1,41 @@
+<div class="sticky-card">
+  <div class="header">
+    <h2>Sticky Notes</h2>
+    <span class="icon">📝</span>
+  </div>
+
+  <form class="input-row" (submit)="addTodo(); $event.preventDefault()">
+    <input
+      type="text"
+      placeholder="write a little note…"
+      [(ngModel)]="newTodo"
+      name="todo"
+    />
+    <button type="submit">+</button>
+  </form>
+
+  <ul class="list">
+    @for (todo of todos; track $index) {
+      <li [class.done]="todo.done">
+        <label>
+          <input
+            type="checkbox"
+            [checked]="todo.done"
+            (change)="toggle(todo)"
+          />
+          <span class="text">{{ todo.text }}</span>
+        </label>
+
+        <button class="delete" (click)="remove($index)">×</button>
+      </li>
+    }
+
+    @if (todos.length === 0) {
+      <li class="empty">
+        nothing here yet 🌼
+      </li>
+    }
+  </ul>
+
+  <p class="footer">tiny thoughts, gently stored ♡</p>
+</div>

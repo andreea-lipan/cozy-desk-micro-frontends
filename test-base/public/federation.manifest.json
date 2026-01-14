@@ -1,0 +1,4 @@
+{
+	"tea-tracker": "http://localhost:4222/remoteEntry.json",
+	"sticky-notes": "http://localhost:4333/remoteEntry.json"
+}

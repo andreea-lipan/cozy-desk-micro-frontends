@@ -1,0 +1,26 @@
+<div class="tea-card">
+  <div class="header">
+    <h2>Tea Tracker</h2>
+    <span class="icon">☕</span>
+  </div>
+
+  <div class="cups">
+    @for (_ of [].constructor(cups); track $index) {
+      <span class="cup">☕</span>
+    }
+
+    @if (cups === 0) {
+      <span class="empty">
+        no tea yet…
+      </span>
+    }
+  </div>
+
+  <div class="controls">
+    <button (click)="removeCup()">−</button>
+    <span class="count">{{ cups }} / {{ maxCups }}</span>
+    <button (click)="addCup()">+</button>
+  </div>
+
+  <p class="footer">stay cozy, stay hydrated ♡</p>
+</div>

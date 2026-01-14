@@ -1,0 +1,90 @@
+.tea-card {
+  width: 260px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #fff7ed; /* pastel amber */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tea-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.header h2 {
+  font-size: 1.1rem;
+  color: #92400e;
+  margin: 0;
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.cups {
+  min-height: 42px;
+  margin-bottom: 14px;
+}
+
+.cup {
+  font-size: 1.6rem;
+  margin-right: 4px;
+  cursor: default;
+  transition: transform 0.15s ease;
+}
+
+.cup:hover {
+  transform: scale(1.1);
+}
+
+.empty {
+  font-size: 0.85rem;
+  color: #b45309;
+  font-style: italic;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls button {
+  background: #fde68a;
+  border: none;
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #78350f;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.controls button:hover {
+  background: #fcd34d;
+}
+
+.controls button:active {
+  transform: scale(0.95);
+}
+
+.count {
+  font-size: 0.85rem;
+  color: #92400e;
+}
+
+.footer {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: #b45309;
+  text-align: center;
+}

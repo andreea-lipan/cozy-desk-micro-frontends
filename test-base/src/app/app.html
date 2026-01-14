@@ -1,0 +1,28 @@
+<div class="home-container">
+  <!-- Sidebar Menu -->
+  <nav class="menu">
+    <h1 class="menu-title">🌿 Cozy Desk</h1>
+    <ul>
+      <li>
+        <a routerLink="/home-page" routerLinkActive="active">
+          🌼 Home Page
+        </a>
+      </li>
+      <li>
+        <a routerLink="/tea-tracker" routerLinkActive="active">
+          ☕ Tea Tracker
+        </a>
+      </li>
+      <li>
+        <a routerLink="/sticky-notes" routerLinkActive="active">
+          📝 Sticky Notes
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
